@@ -1,0 +1,29 @@
+<v-vertical-layout margin="false" spacing="false">
+    <v-horizontal-layout _id="topbar" size-full>
+        <v-label _id="title" style-name="h2">Demo Application</v-label>
+        <v-label _id="username" spacing="true" :right :middle>Admin</v-label>
+    </v-horizontal-layout>
+    <v-horizontal-layout _id="menuAndContent" size-full>
+        <v-vertical-layout _id="menu" width="100%" margin="false" spacing="false" :expand=1>
+            <v-label _id="item1">Person</v-label>
+            <v-label _id="item2">Item 2</v-label>
+            <v-label _id="item3">Item 3</v-label>
+            <v-label _id="item4">Item 4</v-label>
+            <v-label _id="item5">Item 5</v-label>
+        </v-vertical-layout>
+        <v-vertical-layout _id="content" :expand=9>
+            <v-panel caption="Person Details">
+                <v-form-layout _id="personForm" spacing="true" margin="true">
+                    <v-text-field _id="firstName" caption="First Name"></v-text-field>
+                    <v-text-field _id="lastName" caption="Last Name"></v-text-field>
+                    <v-date-field _id="dob" caption="Birthdate"></v-date-field>
+                    <v-combo-box _id="gender" caption="Gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </v-combo-box>
+                    <v-button _id="save">Save</v-button>
+                </v-form-layout>
+            </v-panel caption="Person Details">
+        </v-vertical-layout>
+    </v-horizontal-layout>
+</v-vertical-layout>
