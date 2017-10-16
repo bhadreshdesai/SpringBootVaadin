@@ -30,7 +30,7 @@ public class DemoApplicationUI extends UI {
 
     private void showLoginView() {
         //LoginView loginView = ;
-        this.setContent(new LoginView(() -> this.showMainView()));
+        this.setContent(new LoginView(this::showMainView));
     }
 
     private void showMainView() {

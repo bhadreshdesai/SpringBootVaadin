@@ -20,9 +20,7 @@ public class LoginView extends VerticalLayout {
     public LoginView(LoginListerner loginListerner) {
         this.loginListener = loginListerner;
         Design.read(this);
-        this.loginButton.addClickListener(event -> {
-            this.login();
-        });
+        this.loginButton.addClickListener(event -> this.login());
     }
 
     private void login() {
